@@ -16,6 +16,12 @@
 ## Attention UNet
 <img width="1215" height="685" alt="image" src="https://github.com/user-attachments/assets/43dd6d92-1d98-406b-8ff9-9efeef7216dd" />
 
+## Metrics of evalutation step
+5 fold crossvalidation in UNet => IoU: 0.687 ± 0.030, Dice: 0.816 ± 0.033
+5 fold crossvalidation in Attention UNet => IoU: 0.6635 ± 0.0207, Dice: 0.7777 ± 0.0237
+
+# Notes
+Although we expected the Attention UNet to outperform UNet model with the same hyperparameter settings, the data limitation & model complexity may contribute to this result. Thus, further experiment should be extended into experimenting with simplifying the model, increase the number of data, & try different losses. The evaluation can also be extended into introducing more metrics (such as Haussdorf Distance, recall, precision), & add the pipeline of metric computation on patient/case-level instead of random batch
 
 
 # REFERENCES:
